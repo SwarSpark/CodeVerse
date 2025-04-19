@@ -35,7 +35,7 @@
             <div id="underline"></div>
             <p id="gurukilli-description">Education is the key to success, We found it -  <b>GURUKILLI</b></p>
             <div class="cta-buttons">
-                <button type="button" class="cta-button" onclick="window.location.href='authentication/frontend/register.html'">
+                <button type="button" class="cta-button" id="start-learning-button" onclick="window.location.href='authentication/frontend/register.html'">
                     <span></span>Start learning
                 </button>
                 
@@ -195,6 +195,9 @@
                 'google_translate_element'
             );
         } 
+          document.getElementById('start-learning-button').addEventListener('click', function() {
+    console.log('Start Learning button clicked');
+});
   </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
